@@ -1,23 +1,28 @@
 html {
     font-family: "Open Sans" sans-serif; /* with these tags you can write comments in CSS */
-    background-color: lightcyan;
 }
 
 body {
     width: 600px;
     margin: 20px auto;
-    background-color: papayawhip;
     padding: auto;
-    border: 5px solid black;
-}
-
-img {
-    display:block;
-    margin: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-size: 30px;
     font-weight: bold;
-    text-decoration: underline;
+    text-align: center;
+    border: 2px solid lightgray;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 0%;
+}
+
+p {
+    font-size: 20px;
+    text-align: left;
+    border: 2px solid lightgray;
+    padding-inline-start: 1%;
+    margin-top: 0%;
+    
 }
