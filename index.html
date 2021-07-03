@@ -25,17 +25,13 @@
 <p>JavaScript can "display" data in different ways:</p>
 
 <ul>
-    <li>
-        <p>Writing into an HTML element, by using <em>innerHTML.</em></p>
+    <li><p>Writing into an HTML element, by using <em>innerHTML.</em></p>
     </li> <!--Changing the innerHTML property of an HTML element is a common way to display data in HTML.-->
-    <li>
-        <p>Writting into the HTML output, by using <em>document.write()</em></p>
+    <li><p>Writting into the HTML output, by using <em>document.write()</em></p>
     </li> <!--Using document.write() after an HTML document is loaded, will DELETE all existing HTML. This method should only be used for testing-->
-    <li>
-        <p>Writing into an alert box, by using <em>window.alert()</em></p>
+    <li><p>Writing into an alert box, by using <em>window.alert()</em></p>
     </li><!--specifying the 'window' keyword is optional. So it should work with alert() as well.-->
-    <li>
-        <p>Writing into the browser console, by using <em>console.log()</em></p>
+    <li><p>Writing into the browser console, by using <em>console.log()</em></p>
     </li> <!--For debugging purposes, you can call the console.log() method in the browser to display data.-->
 </ul>
 
@@ -43,8 +39,66 @@
 
 <h2>JavaScript statements</h2>
 
-<p id=demo1></p>
+<p id=demo1></p> <!--Look at the JS file document.getElementById("demo1")-->
 
+<hr>
+
+<h2>JavaScript functions</h2>
+
+<h3>Function invocation</h3>
+
+<p>The code inside the function will execute when "something"<b>invokes</b> (calls) the function:</p>
+
+<ul>
+    <li><p>When an event occurs (when a user clicks a button)</p>
+    </li>
+    <li><p>When it is invoked (called) from JavaScript code</p>
+    </li>
+    <li><p>Automatically (self invoked)</p>
+    </li>
+</ul>
+
+<p id=demo2></p>
+
+<h2>HTML events</h2>
+
+<p>An HTML event can be something the browser does, or something a user does.</p>
+
+<p>Here are some examples of HTML events:</p>
+<ul>
+    <li><p>An HTML web page has finished loading</p>
+    </li>
+    <li><p>An HTML input field was changed</p>
+    </li>
+    <li><p>An HTML button was clicked</p>
+    </li>
+</ul>
+
+<p id=demo3></p>
+<button onclick="displayDate()">The time is?</button>
+
+<h3>Common HTML events</h3>
+<p>Here is a list of some common HTML events</p>
+<ul>
+    <li><p >onchange</p></li> <!-- An HTML element has been changed -->
+    <li><p>onclick</p></li> <!-- The user clicks an HTML element -->
+    <li><p>onmouseover</p></li> <!-- The user moves the mouse over an HTML element -->
+    <li><p>onmouseout</p></li> <!-- The user moves the mouse away from an HTML element -->
+    <li><p>onkeydown</p></li> <!-- The user pushes a keyboard key -->
+    <li><p>onload</p></li> <!-- The browser had finished loading the page -->
+</ul> 
+
+<h2>Extracting String Parts</h2>
+<p>There are 3 methods for extracting a part of a string</p>
+
+<ul>
+    <li><p>slice(start, end)</p></li>
+    <li><p>substring(start, end)</p></li>
+    <li><p>substr(start, length)</p></li>
+</ul>
+
+<button onclick="changeText()">Change text</button>
+<p id=demo4>Please visit Google!</p>
 
     <script src="Scripts/main.js"></script>
 
