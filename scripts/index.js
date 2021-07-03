@@ -100,3 +100,9 @@ let text7 = text5.concat(" ", text6);
 console.log(text2)
 console.log(text4)
 console.log(text7)
+
+text.split(",") // Split on commas
+text.split(" ") // Split on spaces
+text.split("|") // Split on pipe
+text.split("") // Split in characters
+
