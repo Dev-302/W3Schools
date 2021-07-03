@@ -21,12 +21,16 @@ const car = {
     }
 };
 
+// shows car.fullName on demo2 paragraph
 document.getElementById("demo2").innerHTML = car.fullName();
 
+
+// Shows date @ demo3 by clicking button
 function displayDate() {
     document.getElementById("demo3").innerHTML = Date();
 }
 
+// Changes text @ demo4 by clicking button
 function changeText() {
     let text = document.getElementById("demo4").innerHTML;
     document.getElementById("demo4").innerHTML =
