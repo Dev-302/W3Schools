@@ -10,3 +10,25 @@ z = x + y;    // Statement 4
 
 //Changes the "demo1 paragraph in HTML file"
 document.getElementById("demo1").innerHTML = "The value of z is " + z + ".";
+
+const car = {
+    type:"Fiat", 
+    model:"500",
+    color:"white",
+    year:2006, 
+    fullName: function() {
+        return this.type + " " + this.model;
+    }
+};
+
+document.getElementById("demo2").innerHTML = car.fullName();
+
+function displayDate() {
+    document.getElementById("demo3").innerHTML = Date();
+}
+
+function changeText() {
+    let text = document.getElementById("demo4").innerHTML;
+    document.getElementById("demo4").innerHTML =
+    text.replace("Google","Duckduckgo");
+}
