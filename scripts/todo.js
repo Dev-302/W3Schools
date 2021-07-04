@@ -35,3 +35,35 @@ function toggleDone(event) {
   for (let i = 0; i < checkboxes.length; i++) {
     checkboxes[i].addEventListener("change", toggleDone);
   }
+
+ function createTodo() {
+   // Create a label
+   
+   // create a checkbox
+   // add the "change" event listener to the checkbox
+   // and append the checkbox to the label
+
+   // create a text node with the given title
+   // and appent the text node to the label
+
+   // create a list item
+   // and append the label to list item
+
+   // append the list item to the todo list
+ }
+ 
+  document
+    .querySelector("form")
+    .addEventListener("submit", function addNewTodo(event) {
+      event.preventDefault();
+
+      const inputField = document.querySelector("#new-todo");
+      const newTodoTitle = inputField.value;
+      createTodo(newTodoTitle);
+
+      // reset the value of the inputField to make it empty and
+      // ready to create new todos
+      inputField.value = null;
+
+      updateCounters();
+    });
