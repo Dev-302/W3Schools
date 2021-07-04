@@ -21,5 +21,32 @@ document.getElementById("demo3").innerHTML = text.charAt(4); // The charAt() met
 document.getElementById("demo4").innerHTML = text.charCodeAt(0); //The charCodeAt() method returns the unicode of the character at a specified index in a string.
 document.getElementById("demo5").innerHTML = text[2];
 
+let str1 = "please locate where 'locate' occurs!";
+document.getElementById("demo6").innerHTML = str1.indexOf("locate");
+document.getElementById("demo7").innerHTML = str1.lastIndexOf("locate");
+document.getElementById("demo8").innerHTML = str1.indexOf("locate", 15);
+
+let text1 = "the rain in SPAIN stays mainly in the plain";
+document.getElementById("demo9").innerHTML = text1.match(/ain/gi);
+
+document.getElementById("demo10").innerHTML = text;
+document.getElementById("demo11").innerHTML = text.includes("WORLD");
+
+// string.includes(searchvalue, start)
+
+document.getElementById("demo12").innerHTML = text1.startsWith("rain");
+document.getElementById("demo13").innerHTML = text1.endsWith("plain");
+
+let x = 10;
+let y = 20;
+let z = x + y;
+document.getElementById("demo14").innerHTML = z; // returns as a number
+
+let a = "10";
+let b = "20";
+let c = a + b;
+document.getElementById("demo15").innerHTML = c; // returns as a string
+
+
 
 
