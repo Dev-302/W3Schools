@@ -10,24 +10,25 @@
         <button><a href="todo.html">Refresh</a></button>
         <button><a href="index.html">Back to homepage</a></button>
         <div class="container">
-            <h1>TodoList</h1>
+            <h1>To do List</h1>
             
             <form>
             <input type="text" id="new-todo" placeHolder="What needs to be done?" />
         </form>
 
         <ul id="todo-list">
-            <li class="todo">
-                <label><input type="checkbox"/> Sweep the floor </label>
-            </li>
             <li class="todo completed">
-                <label><input type="checkbox" checked /> Dust the vases </label>
+                <label><input type="checkbox" checked /> Bed opmaken </label>
+            </li>
+            <li class="todo">
+                <label><input type="checkbox"/> Verder leren met JavaScript </label>
             </li>
         </ul>
         <div class="footer">
             Todo: <span id="todo-count"> 1 </span> * Done:
             <span id="completed-count"> 0 </span> * Total:
             <span id= "total-count"> 1 </span>
+            <a href="#" id="clean-up">Clean up</a>
         </div>
     </div>
     <script src="scripts/todo.js" type="text/javascript">

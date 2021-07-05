@@ -36,20 +36,33 @@ function toggleDone(event) {
     checkboxes[i].addEventListener("change", toggleDone);
   }
 
- function createTodo() {
+ function createTodo(title) {
    // Create a label
+  const label = document.createElement("label");
    
    // create a checkbox
+   const checkbox = document.createElement("input");
+   checkbox.type = "checkbox";
+   checkbox.checked = false;
    // add the "change" event listener to the checkbox
-   // and append the checkbox to the label
+   checkbox.addEventListener("change", toggleDone);
+   // and add the checkbox to the label
+   label.appendChild(checkbox);
 
    // create a text node with the given title
-   // and appent the text node to the label
+   const labelText = document.createTextNode(" " + title);
+   // and add the text node to the label
+   label.appendChild(labelText);
 
    // create a list item
-   // and append the label to list item
+   const listItem = document.createElement("li");
+   listItem.className = "todo";
+   // and add the label to list item
+   listItem.appendChild(label);
 
    // append the list item to the todo list
+   const list = document.getElementById("todo-list");
+   list.appendChild(listItem);
  }
  
   document
@@ -67,3 +80,19 @@ function toggleDone(event) {
 
       updateCounters();
     });
+
+    function cleanUpTodos() {
+      // get all the "done" items
+      const doneItems = document.querySelectorAll(".completed");
+
+      // Loop through the "dpme" todo items
+      for (let i = 0; i < doneItems.length; i++) {
+        //and remove them from the DOM
+        doneItems[i].remove();
+      }
+
+      // update the counters
+      updateCounters();
+    }
+
+    document.getElementById("clean-up").addEventListener("click", cleanUpTodos);
